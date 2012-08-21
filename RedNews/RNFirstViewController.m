@@ -14,16 +14,18 @@
 
 @implementation RNFirstViewController
 
+#pragma mark • Initialization
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = NSLocalizedString(@"News", @"News");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
 }
 							
+#pragma mark • View Manipulations
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,5 +42,6 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D12FF7B15E34B1200E811B1 /* RNWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D12FF7A15E34B1200E811B1 /* RNWebViewController.xib */; };
 		7D8C5AD615E1C9D8009758C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8C5AD515E1C9D8009758C6 /* UIKit.framework */; };
 		7D8C5AD815E1C9D8009758C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8C5AD715E1C9D8009758C6 /* Foundation.framework */; };
 		7D8C5ADA15E1C9D8009758C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8C5AD915E1C9D8009758C6 /* CoreGraphics.framework */; };
@@ -21,9 +22,11 @@
 		7D8C5AF415E1C9D8009758C6 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C5AF315E1C9D8009758C6 /* second@2x.png */; };
 		7D8C5AF715E1C9D8009758C6 /* RNFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C5AF515E1C9D8009758C6 /* RNFirstViewController.xib */; };
 		7D8C5AFA15E1C9D8009758C6 /* RNSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C5AF815E1C9D8009758C6 /* RNSecondViewController.xib */; };
+		7D8C5B2315E1CDF0009758C6 /* RNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D12FF7A15E34B1200E811B1 /* RNWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNWebViewController.xib; sourceTree = "<group>"; };
 		7D8C5AD115E1C9D8009758C6 /* RedNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8C5AD515E1C9D8009758C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7D8C5AD715E1C9D8009758C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +47,8 @@
 		7D8C5AF315E1C9D8009758C6 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		7D8C5AF615E1C9D8009758C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RNFirstViewController.xib; sourceTree = "<group>"; };
 		7D8C5AF915E1C9D8009758C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RNSecondViewController.xib; sourceTree = "<group>"; };
+		7D8C5B2115E1CDEF009758C6 /* RNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWebViewController.h; sourceTree = "<group>"; };
+		7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,9 @@
 				7D8C5AF515E1C9D8009758C6 /* RNFirstViewController.xib */,
 				7D8C5AF815E1C9D8009758C6 /* RNSecondViewController.xib */,
 				7D8C5ADC15E1C9D8009758C6 /* Supporting Files */,
+				7D8C5B2115E1CDEF009758C6 /* RNWebViewController.h */,
+				7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */,
+				7D12FF7A15E34B1200E811B1 /* RNWebViewController.xib */,
 			);
 			path = RedNews;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 				7D8C5AF415E1C9D8009758C6 /* second@2x.png in Resources */,
 				7D8C5AF715E1C9D8009758C6 /* RNFirstViewController.xib in Resources */,
 				7D8C5AFA15E1C9D8009758C6 /* RNSecondViewController.xib in Resources */,
+				7D12FF7B15E34B1200E811B1 /* RNWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				7D8C5AE615E1C9D8009758C6 /* RNAppDelegate.m in Sources */,
 				7D8C5AE915E1C9D8009758C6 /* RNFirstViewController.m in Sources */,
 				7D8C5AF015E1C9D8009758C6 /* RNSecondViewController.m in Sources */,
+				7D8C5B2315E1CDF0009758C6 /* RNWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +287,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RedNews/RedNews-Prefix.pch";
 				INFOPLIST_FILE = "RedNews/RedNews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RedNews/RedNews-Prefix.pch";
 				INFOPLIST_FILE = "RedNews/RedNews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -312,6 +324,7 @@
 				7D8C5AFF15E1C9D8009758C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
