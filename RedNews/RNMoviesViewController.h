@@ -11,6 +11,8 @@
 @interface RNMoviesViewController : UIViewController <UIWebViewDelegate>
 {
     UIWebView*          mWebView;
+    UIActivityIndicatorView*        activityIndicator;
+
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView* webView;

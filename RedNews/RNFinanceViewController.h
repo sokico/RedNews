@@ -11,6 +11,7 @@
 @interface RNFinanceViewController : UIViewController <UIWebViewDelegate>
 {
     UIWebView*          mWebView;
+    UIActivityIndicatorView*        activityIndicator;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView* webView;

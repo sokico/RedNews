@@ -21,6 +21,7 @@
     if (self) {
         self.title = NSLocalizedString(@"News", @"News");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        mInterceptLinks = NO;
     }
     return self;
 }
@@ -50,6 +51,7 @@
 - (void) loadURL:(NSURL *)urlToLoad
 {
     mWebView.hidden = YES;
+    [activityIndicator startAnimating];
 	[mWebView loadRequest:[NSURLRequest requestWithURL:urlToLoad]];
 }
 
@@ -65,6 +67,7 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     inWebView.hidden = NO;
     
+    [activityIndicator stopAnimating];
 //    if (mDidFinishLoadBlock) {
 //        mDidFinishLoadBlock(inWebView);
 //    }
@@ -80,6 +83,13 @@
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
         //Check to see if its a rediff link. If not then show it with back/forward buttons.
         
+        if (mInterceptLinks) {
+            //Launch in new view
+        } else {
+            mInterceptLinks = TRUE;
+            return YES;
+        }
+        
     }
     return YES;
 }
@@ -87,12 +97,13 @@
 #pragma mark • Memory Management
 - (void)dealloc
 {
+    mWebView.delegate = nil;
     [mWebView release];
     [super dealloc];
 }
 
 @synthesize webView = mWebView;
-
+@synthesize webViewController = mWebViewController;
 
 
 @end

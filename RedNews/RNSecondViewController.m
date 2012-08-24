@@ -49,6 +49,8 @@
 - (void) loadURL:(NSURL *)urlToLoad
 {
     mWebView.hidden = YES;
+    [activityIndicator startAnimating];
+
 	[mWebView loadRequest:[NSURLRequest requestWithURL:urlToLoad]];
 }
 
@@ -63,6 +65,7 @@
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     inWebView.hidden = NO;
+    [activityIndicator stopAnimating];
     
     //    if (mDidFinishLoadBlock) {
     //        mDidFinishLoadBlock(inWebView);
@@ -86,6 +89,7 @@
 #pragma mark • Memory Management
 - (void)dealloc
 {
+    mWebView.delegate = nil;
     [mWebView release];
     [super dealloc];
 }

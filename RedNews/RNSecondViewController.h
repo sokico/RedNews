@@ -10,7 +10,9 @@
 
 @interface RNSecondViewController : UIViewController <UIWebViewDelegate>
 {
-    UIWebView*      mWebView;
+    UIWebView*                      mWebView;
+    UIActivityIndicatorView*        activityIndicator;
+
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView* webView;

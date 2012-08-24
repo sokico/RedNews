@@ -9,8 +9,9 @@
 #import "RNAppDelegate.h"
 
 #import "RNFirstViewController.h"
-
 #import "RNSecondViewController.h"
+#import "RNFinanceViewController.h"
+#import "RNMoviesViewController.h"
 
 @implementation RNAppDelegate
 
@@ -26,9 +27,15 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[[RNFirstViewController alloc] initWithNibName:@"RNFirstViewController" bundle:nil] autorelease];
+    
     UIViewController *viewController2 = [[[RNSecondViewController alloc] initWithNibName:@"RNSecondViewController" bundle:nil] autorelease];
+    
+    UIViewController *viewController3 = [[[RNFinanceViewController alloc] initWithNibName:@"RNFinanceViewController" bundle:nil] autorelease];
+    
+    UIViewController *viewController4 = [[[RNMoviesViewController alloc] initWithNibName:@"RNMoviesViewController" bundle:nil] autorelease];
+
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
     self.tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
