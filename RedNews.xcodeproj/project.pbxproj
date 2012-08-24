@@ -23,6 +23,10 @@
 		7D8C5AF715E1C9D8009758C6 /* RNFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C5AF515E1C9D8009758C6 /* RNFirstViewController.xib */; };
 		7D8C5AFA15E1C9D8009758C6 /* RNSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C5AF815E1C9D8009758C6 /* RNSecondViewController.xib */; };
 		7D8C5B2315E1CDF0009758C6 /* RNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */; };
+		7DCFDE1715E56F8600944737 /* RNFinanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFDE1515E56F8600944737 /* RNFinanceViewController.m */; };
+		7DCFDE1815E56F8600944737 /* RNFinanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DCFDE1615E56F8600944737 /* RNFinanceViewController.xib */; };
+		7DCFDE1C15E56FF400944737 /* RNMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFDE1A15E56FF400944737 /* RNMoviesViewController.m */; };
+		7DCFDE1D15E56FF400944737 /* RNMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DCFDE1B15E56FF400944737 /* RNMoviesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,12 @@
 		7D8C5AF915E1C9D8009758C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RNSecondViewController.xib; sourceTree = "<group>"; };
 		7D8C5B2115E1CDEF009758C6 /* RNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWebViewController.h; sourceTree = "<group>"; };
 		7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWebViewController.m; sourceTree = "<group>"; };
+		7DCFDE1415E56F8600944737 /* RNFinanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFinanceViewController.h; sourceTree = "<group>"; };
+		7DCFDE1515E56F8600944737 /* RNFinanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFinanceViewController.m; sourceTree = "<group>"; };
+		7DCFDE1615E56F8600944737 /* RNFinanceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNFinanceViewController.xib; sourceTree = "<group>"; };
+		7DCFDE1915E56FF300944737 /* RNMoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNMoviesViewController.h; sourceTree = "<group>"; };
+		7DCFDE1A15E56FF400944737 /* RNMoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMoviesViewController.m; sourceTree = "<group>"; };
+		7DCFDE1B15E56FF400944737 /* RNMoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNMoviesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +109,20 @@
 				7D8C5AE515E1C9D8009758C6 /* RNAppDelegate.m */,
 				7D8C5AE715E1C9D8009758C6 /* RNFirstViewController.h */,
 				7D8C5AE815E1C9D8009758C6 /* RNFirstViewController.m */,
+				7D8C5AF515E1C9D8009758C6 /* RNFirstViewController.xib */,
 				7D8C5AEA15E1C9D8009758C6 /* first.png */,
 				7D8C5AEC15E1C9D8009758C6 /* first@2x.png */,
 				7D8C5AEE15E1C9D8009758C6 /* RNSecondViewController.h */,
 				7D8C5AEF15E1C9D8009758C6 /* RNSecondViewController.m */,
+				7D8C5AF815E1C9D8009758C6 /* RNSecondViewController.xib */,
 				7D8C5AF115E1C9D8009758C6 /* second.png */,
 				7D8C5AF315E1C9D8009758C6 /* second@2x.png */,
-				7D8C5AF515E1C9D8009758C6 /* RNFirstViewController.xib */,
-				7D8C5AF815E1C9D8009758C6 /* RNSecondViewController.xib */,
+				7DCFDE1415E56F8600944737 /* RNFinanceViewController.h */,
+				7DCFDE1515E56F8600944737 /* RNFinanceViewController.m */,
+				7DCFDE1615E56F8600944737 /* RNFinanceViewController.xib */,
+				7DCFDE1915E56FF300944737 /* RNMoviesViewController.h */,
+				7DCFDE1A15E56FF400944737 /* RNMoviesViewController.m */,
+				7DCFDE1B15E56FF400944737 /* RNMoviesViewController.xib */,
 				7D8C5ADC15E1C9D8009758C6 /* Supporting Files */,
 				7D8C5B2115E1CDEF009758C6 /* RNWebViewController.h */,
 				7D8C5B2215E1CDEF009758C6 /* RNWebViewController.m */,
@@ -186,6 +202,8 @@
 				7D8C5AF715E1C9D8009758C6 /* RNFirstViewController.xib in Resources */,
 				7D8C5AFA15E1C9D8009758C6 /* RNSecondViewController.xib in Resources */,
 				7D12FF7B15E34B1200E811B1 /* RNWebViewController.xib in Resources */,
+				7DCFDE1815E56F8600944737 /* RNFinanceViewController.xib in Resources */,
+				7DCFDE1D15E56FF400944737 /* RNMoviesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +219,8 @@
 				7D8C5AE915E1C9D8009758C6 /* RNFirstViewController.m in Sources */,
 				7D8C5AF015E1C9D8009758C6 /* RNSecondViewController.m in Sources */,
 				7D8C5B2315E1CDF0009758C6 /* RNWebViewController.m in Sources */,
+				7DCFDE1715E56F8600944737 /* RNFinanceViewController.m in Sources */,
+				7DCFDE1C15E56FF400944737 /* RNMoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

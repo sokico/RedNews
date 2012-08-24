@@ -29,6 +29,7 @@
     UIViewController *viewController2 = [[[RNSecondViewController alloc] initWithNibName:@"RNSecondViewController" bundle:nil] autorelease];
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -61,12 +62,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-/*
+
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    //Release the web views from inside each of the individual views. That way its not in memory for long.
+    
 }
-*/
+
 
 /*
 // Optional UITabBarControllerDelegate method.

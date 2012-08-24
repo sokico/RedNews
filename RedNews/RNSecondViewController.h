@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RNSecondViewController : UIViewController
+@interface RNSecondViewController : UIViewController <UIWebViewDelegate>
+{
+    UIWebView*      mWebView;
+}
+
+@property (nonatomic, retain) IBOutlet UIWebView* webView;
 
 @end
